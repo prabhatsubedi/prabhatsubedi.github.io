@@ -29,12 +29,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Prabhat Subedi</a>
+          <a class="navbar-brand" href="index.php">Prabhat Subedi</a>
           <div class="nav-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.php">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="about.php">About</a></li>
-              <li><a href="contact.php">Contact</a></li>
+              <li class="active"><a href="contact.php">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -54,15 +54,23 @@
 
       <!-- Begin page content -->
       <div class="container">
-		  <div class="jumbotron">
-			<h1>Prabhat Subedi</h1>
-			<h3>(Java Developer)</h3>
-			<h3>(Microsoft Certified Professional)</h3>
-			<p>3+ years experience in <b>Java Web Application Development</b> with Spring MVC, Hibernate, MYSQL, RESTful Web Services, CSS, Javascript, jQuery, Ajax based in Kathmandu, Nepal.</p>
-			<p>Looking for some part time job...</p>
-			<p><a class="btn btn-primary btn-large" href="about.php">More About Me &raquo;</a></p>
-		  </div>
-		  </div>
+        <div class="content">
+		<div class="info">
+			<div class="info-column" style="margin-right: 0px;">
+				<h2>Contact Me</h2>
+				<p><b>Email:</b> prabhat.aurora@gmail.com<br>
+				<b>Mobile:</b> +977 9841669206 <br>
+				<b>Postal Address:</b> Mahadevsthan V.D.C., Ward No. - 4, Kathmandu, Nepal<br>
+				<b>Facebook:</b> facebook.com/prabhatsubedi<br>
+				<b>Twitter:</b> @PrabhatSubedi<br>
+				<b>Skype:</b> prabhatsubedi<br><br>
+				<b>Official Name:</b> Narayan Subedi
+				</p>
+			</div>
+		</div>
+	
+	</div>
+      </div>
     </div>
 
     <div id="footer">
