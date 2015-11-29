@@ -21,35 +21,9 @@
     <!-- Wrap all page content here -->
     <div id="wrap">
 
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-fixed-top top">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.php">Prabhat Subedi</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+     <!-- Fixed navbar -->
+      <div id="fixed-nav" class="navbar navbar-fixed-top top">
+        
       </div>
 
       <!-- Begin page content -->
@@ -75,21 +49,16 @@
 			</div>
 			<div class="info-column">
 				<h2>Experience</h2>
-				<p>Currently working as a Software Engineer - Java at Deerwalk Services Pvt. Ltd. <br>Previously worked as a Java Developer (Independent Contractor)
-				with remote employer at HongKong office, ZurelSoft Nepal Pvt. Ltd. a USA based Software Company and WakHok Nepal Pvt. Ltd. a Japan based Software Company working for US based clients.
+				<p>Currently working as a <b>Software Engineer - Java at Deerwalk Services Pvt. Ltd.</b></p>
+				<p>Previously worked as a Java Developer (Independent Contractor)
+				with remote employer <b>Forerunner Technology</b> at <b>HongKong</b> office.
+				</p>
+				<p>Also with <b>ZurelSoft Nepal Pvt. Ltd.</b> a USA based Software Company and <b>WakHok Nepal Pvt. Ltd.</b> a Japan based Software Company working for US based clients as a <b>Java Developer</b>.
 				</p>
 			</div>
 			<div class="info-column">
 				<h2>Education</h2>
 				<p>MScIT from Sikkim Manipal University, India in JAN 2012.</p>
-			</div>
-			<div class="info-column">
-				<h2>IMP GIT Commands</h2>
-				<ul>
-					<ol><b>List All Files Pushed: </b>git show --name-status <--commit hash--></ol>
-					<ol><b>See Remote URL: </b>git remote -v</ol>
-					<ol><b>Commited but not Pushed: </b>git diff --stat --cached origin/develop</ol>
-				</ul>
 			</div>
 		</div>
 	
@@ -105,8 +74,15 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-		 <script src="js/jquery.js"></script>
-		 <script src="js/bootstrap.js"></script>
-		 <script src="js/custom.js"></script>
+	 <script src="js/jquery.js"></script>
+	 <script src="js/bootstrap.js"></script>
+	 <script src="js/custom.js"></script>
+	<script>
+		$(function(){
+		      	$("#fixed-nav").load("header.html", function(){
+				highlightCurrentPage('about');
+			}); 
+		});
+	</script>
 	</body>
 </html>
