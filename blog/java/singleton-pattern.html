@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Prabhat Subedi - Java Developer</title>
+		<meta charset="UTF-8">
+		<!-- mobile Specefic meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="../../css/bootstrap.css">
+		<link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../css/media.css">
+		<link rel="shortcut icon" href="../../images/prabhat.ico">
+		<!-- Font -->
+		<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+		<!-- Ends Font -->
+
+	</head>
+	<body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+     <!-- Fixed navbar -->
+      <div id="fixed-nav" class="navbar navbar-fixed-top top">
+        
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="content">
+		
+		<div>
+			
+			<div>
+				<h2>Singleton Pattern</h2>
+				<p>
+					<ul>
+						<li>The <b>singleton pattern</b> is one of the simplest design pattern.</li>
+						<li>It involves only one class which is responsible to instantiate itself.</li>
+						<li>It restricts to create more than one instance.</li>
+						<li>In the same time it provides a global point of access to that instance.</li>
+					</ul>
+				</p>
+				<h3>Example:</h3>
+				<div>
+					<pre style="width: auto;">
+						public class SingletonClass(){
+							private static final SingletonClass INSTANCE = new SingletonClass();
+
+							private SingletonClass(){
+								//this constructor is required to restrict to create object from outside.
+							}
+
+							public static SingletonClass getInstance(){
+								return INSTANCE;
+							}
+						}
+
+						public class SingletonDemo(){
+							public static void main(String[] args){
+								SingletonClass obj = SingletonClass.getInstance();
+							}
+						}
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+	
+	</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit" id="footer-text"></p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+	 <script src="../../js/jquery.js"></script>
+	 <script src="../../js/bootstrap.js"></script>
+	 <script src="../../js/custom.js"></script>
+	<script>
+		$(function(){
+		      	$("#fixed-nav").load("header.html", function(){
+				highlightCurrentPage('blog');
+			}); 
+		});
+		
+	</script>
+	</body>
+</html>
