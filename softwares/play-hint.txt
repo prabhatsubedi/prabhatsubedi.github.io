@@ -1,0 +1,14 @@
+Click on the attached file and unzip it to area you have access to; possible the E: or the X: drives.
+Once the files are unzipped, double-click on the file called project this should start up Greenfoot. Now press the compile button and then run.The lobster should move it a rectangular track
+Task 1:
+Move the slider on screen to speed up the lobster.
+Task 2:
+Right click on the box marked lobster, and click to open the editor. A new screen should appear with some code ignore everything else except the code under act() this carries out our routine. Have a look at the code and see if you can work out how it works.
+Task 3:
+Remove the // found on some of the lines. This has added some new commands. Click on compile and go back to the main page and click the compile button and then the Run button. What does it do?
+Task 4:
+Now create your own routine with act() to make the lobster dance.
+Task 5:
+Edit the dance routine by removing stop() and compile. Now right-click on lobster actor and left click on new lobster(). Drag the new lobster on to the screen and run. what happens.
+Task 6:
+Now right-click on lobster actor and left click on set image and change the iamge from a lobster to something different (your choice).
