@@ -45,21 +45,16 @@
 				<h3>Example:</h3>
 				<div>
 					<pre style="width: auto;">
-						public class SingletonClass(){
-							private static final SingletonClass INSTANCE = new SingletonClass();
-
-							private SingletonClass(){
-								//this constructor is required to restrict to create object from outside.
-							}
-
-							public static SingletonClass getInstance(){
-								return INSTANCE;
-							}
-						}
-
-						public class SingletonDemo(){
-							public static void main(String[] args){
-								SingletonClass obj = SingletonClass.getInstance();
+						public class ClassicSingleton {
+   							private static ClassicSingleton instance = null;
+   							protected ClassicSingleton() {
+      								// Exists only to defeat instantiation.
+   							}
+							public static ClassicSingleton getInstance() {
+								if(instance == null) {
+							        	instance = new ClassicSingleton();
+							      	}
+							      	return instance;
 							}
 						}
 					</pre>
