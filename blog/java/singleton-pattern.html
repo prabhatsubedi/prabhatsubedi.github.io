@@ -10,6 +10,11 @@
 		<link rel="stylesheet" href="../../css/style.css">
 		<link rel="stylesheet" href="../../css/media.css">
 		<link rel="shortcut icon" href="../../images/prabhat.ico">
+ 		<link rel="stylesheet" href="http://codemirror.net/lib/codemirror.css">
+   		<script src="http://codemirror.net/lib/codemirror.js"></script>
+    		<script src="http://codemirror.net/addon/edit/matchbrackets.js"></script>
+		<script src="http://codemirror.net/addon/edit/continuecomment.js"></script>
+    		<script src="http://codemirror.net/mode/javascript/javascript.js"></script>
 		<!-- Font -->
 		<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 		
@@ -44,7 +49,27 @@
 				</p>
 				<h3>Example:</h3>
 				<div>
-					<pre style="width: auto;">
+					<textarea rows="4" cols="30" id="codesnippet_readonly" name="codesnippet_readonly">
+						public class SingletonClass(){
+							private static final SingletonClass INSTANCE = new SingletonClass();
+
+							private SingletonClass(){
+								//this constructor is required to restrict to create object from outside.
+							}
+
+							public static SingletonClass getInstance(){
+								return INSTANCE;
+							}
+						}
+
+						public class SingletonDemo(){
+							public static void main(String[] args){
+								SingletonClass obj = SingletonClass.getInstance();
+							}
+						}
+
+						//another way
+
 						public class ClassicSingleton {
    							private static ClassicSingleton instance = null;
    							private ClassicSingleton() {
@@ -57,7 +82,7 @@
 							      	return instance;
 							}
 						}
-					</pre>
+					</textarea>
 				</div>
 				
 			</div>
@@ -84,7 +109,16 @@
 				highlightCurrentPage('blog');
 			}); 
 		});
-		
+		window.onload = function () {
+  
+		    var readOnlyCodeMirror = CodeMirror.fromTextArea(document.getElementById('codesnippet_readonly'), {
+			mode: "javascript",
+			theme: "default",
+			lineNumbers: true,
+			readOnly: true
+		    });  
+		  
+		};
 	</script>
 	</body>
 </html>
